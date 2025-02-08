@@ -1,0 +1,9 @@
+{% block content %}
+<h2>File Processed Successfully!</h2>
+
+<h3>Processed Excel Data:</h3>
+<div style="overflow-x: auto;">
+    {{ excel_data|safe }} <!-- Show Excel content as an HTML table -->
+</div>
+
+{% endblock %}
